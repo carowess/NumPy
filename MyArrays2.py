@@ -7,12 +7,16 @@ grades = np.array([[87,96,70],[100,87,90],
 
 
 student1 = grades[1]
+print(student1)
 
 student0_test1 = grades[0,1]
+print(student0_test1)
 
 students0_1 = grades[0:2] #colon represents sequential values, the UPPER BOUND is NOT included (only 0 and 1 are included in this case)
+print(students0_1)
 
 students1and3 = grades[[1,3]] #represents the row part, not the column part, this gives us all the grades for students 1 and 3
+print(students1and3)
 
 #to select students 1 and 3 but only test 2
 students1and3_test2 = grades[[1,3],2]
