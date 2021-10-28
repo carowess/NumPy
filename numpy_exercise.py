@@ -53,6 +53,7 @@ print()
 
 ## Step 8: Superstore has added a 5th cash register who's data is stored in the array newRegister. Add the new register to the original array. Print the updated salesArray.
 print("-----------------------------------------------   STEP EIGHT  -----------------------------------------------")
+print('Updated array with fifth cash register: ')
 newRegister = np.array([17.89,13.59,107.89,176.88,56.78])
 salesArray = np.append(salesArray, newRegister)
 salesArray.resize(5,5)
@@ -62,9 +63,11 @@ print()
 ## Step 9: Register #3 had an error and recorded it's fourth sale ($200.14) incorrectly. The sale should have been $20.14. Update the array to correct this error.
 #           Print the array before and after the update to see the change.
 print("-----------------------------------------------   STEP NINE  -----------------------------------------------")
+print('Array before error is corrected: ')
 print(salesArray)
 print()
 salesArray[2,3] = 20.14
+print('Array after error is corrected: ')
 print(salesArray)
 print()
 
